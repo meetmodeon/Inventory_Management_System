@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: InventoryManagementSystem
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/ims2
+    username: root
+    password: Lumad
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+  servlet:
+    multipart:
+      max-file-size: 2GB
+      max-request-size: 2GB
+server:
+  port: 8080
+secreteSJwtString: "EC7DD9658E3231525C02BC77B7F09EB7F1DA573982B84F4B3E834969B237857F"
+logging:
+  level:
+    org.springframework.security: DEBUG
+    org.springframework.web: DEBUG
+    org.springframework.security.web.FilterChainProxy: DEBUG
+
+

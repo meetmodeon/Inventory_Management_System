@@ -1,0 +1,23 @@
+<div class="profile-page">
+    <p *ngIf="message" class="message">{{message}}</p>
+    <div *ngIf="user" class="profile-card">
+        <h1>Hello,{{user.name}}😊😊</h1>
+        <div class="profile-item">
+            <label for="">Name</label>
+            <span>{{user.name}}</span>
+        </div>
+
+        <div class="profile-item">
+            <label for="">email</label>
+            <span>{{user.email}}</span>
+        </div>
+        <div class="profile-item">
+            <label for="">Phone Number</label>
+            <span>{{user.phoneNumber}}</span>
+        </div>
+        <div class="profile-item">
+            <label for="">Role</label>
+            <span>{{user.role}}</span>
+        </div>
+    </div>
+</div>
